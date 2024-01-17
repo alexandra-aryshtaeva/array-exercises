@@ -1,6 +1,7 @@
 o - done!
 x - stuck!
- 
+
+// 
 o - Even Numbers:
 Write a function that uses the filter method to return an array of only the even numbers from an array of numbers.
 
@@ -26,10 +27,11 @@ Write a function that uses the filter method to return an array containing only 
 x - Filter Unique Elements:
 Write a function that uses the filter method to return an array containing only unique elements from an array (remove duplicates).
 
-Filter by Range:
+o - Filter by Range:
 Write a function that uses the filter method to return an array of numbers within a specified range.
 
-Filter Palindromes:
+//
+x - Filter Palindromes:
 Write a function that uses the filter method to return an array of words from an array of strings, keeping only those that are palindromes.
 
 Filter by Property:

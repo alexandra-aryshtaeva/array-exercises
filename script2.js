@@ -27,7 +27,7 @@ const stringArray = [
 // 1. Words with Length:
 // Write a function that uses the filter method to return an array of words from an array of strings, keeping only those with a specified length. Example: 5
 
-let stringLenghth = filterLength(10);
+const stringLenghth = filterLength(10);
 
 function filterLength(number) {
   return stringArray.filter((e) => {
