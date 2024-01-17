@@ -1,28 +1,29 @@
-
-Certainly! Here are some JavaScript filter exercises for you to practice:
-
-Even Numbers:
+o - done!
+x - stuck!
+ 
+o - Even Numbers:
 Write a function that uses the filter method to return an array of only the even numbers from an array of numbers.
 
-Odd Numbers:
+o - Odd Numbers:
 Write a function that uses the filter method to return an array of only the odd numbers from an array of numbers.
 
-Positive Numbers:
+o - Positive Numbers:
 Write a function that uses the filter method to return an array of only the positive numbers from an array of numbers.
 
-Negative Numbers:
+o - Negative Numbers:
 Write a function that uses the filter method to return an array of only the negative numbers from an array of numbers.
 
-Words with Length:
+//
+o - Words with Length:
 Write a function that uses the filter method to return an array of words from an array of strings, keeping only those with a specified length.
 
-Words that Start with a Letter:
+o - Words that Start with a Letter:
 Write a function that uses the filter method to return an array of words from an array of strings, keeping only those that start with a specified letter.
 
-Filter by Type:
+o - Filter by Type:
 Write a function that uses the filter method to return an array containing only elements of a specified type (e.g., string, number) from a mixed-type array.
 
-Filter Unique Elements:
+x - Filter Unique Elements:
 Write a function that uses the filter method to return an array containing only unique elements from an array (remove duplicates).
 
 Filter by Range:
