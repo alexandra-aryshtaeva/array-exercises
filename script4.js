@@ -82,10 +82,10 @@ const countries = [
 
 // 2. filter countries that dont have the lettter p
 
-// const countriesWithoutP = countries.filter((c) => {
-//   const includingCOuntry = c.includes("p");
-//   return !includingCOuntry;
-// });
+const countriesWithoutP = countries.filter((c) => {
+  const includingCOuntry = c.includes("p");
+  return !includingCOuntry;
+});
 
 // console.log(countriesWithoutP);
 
@@ -114,8 +114,81 @@ function filterCountries(letters) {
 // }
 // console.log(indexList);
 
-const findCountry = countries.filter((index) => {
-    return index > 5;) (
-});
+const findCountry = findCOuntryByIndex(0, 4);
 
-console.log(findCountry);
+function findCOuntryByIndex(index1, index2) {
+  return countries.filter(() => {
+    return countries.findIndex((i) => {
+      // return i < index1 && i > index2;
+    });
+  });
+}
+
+// console.log(findCountry);
+
+const mixedArray = [
+  42,
+  "hello",
+  true,
+  null,
+  undefined,
+  false,
+  NaN,
+  "apple",
+  0,
+  ["nested", "array"],
+  { key: "value" },
+  "",
+  3.14,
+  -10,
+  "world",
+  true,
+  [1, 2, 3],
+  { prop: "example" },
+];
+
+// 5. return truthies
+const truthies = mixedArray.filter((operator) => {
+  return operator;
+});
+// console.log(truthies);
+
+// 6. return falsies
+const falsies = mixedArray.filter((operator) => {
+  return !operator;
+});
+// console.log(falsies);
+
+const randomArray = [
+  42,
+  "hello",
+  true,
+  null,
+  undefined,
+  false,
+  NaN,
+  "apple",
+  0,
+  ["nested", "array"],
+  { key: "value" },
+  "",
+  3.14,
+  -10,
+  "world",
+  true,
+  [1, 2, 3],
+  { prop: "example" },
+];
+
+// 7. filter positive numbers
+
+const positiveNumbers = filteredNumbes();
+
+function filteredNumbes() {
+  return randomArray.filter((op) => {
+    if (Number(op) > 0) {
+      return true;
+    }
+  });
+}
+console.log(positiveNumbers);
