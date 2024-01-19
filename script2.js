@@ -158,17 +158,26 @@ const duplicates = [
 const uniques = duplicates.filter(filterDuplicates);
 
 function filterDuplicates(element, index, array) {
+  // x is index of copy of array
   const foundIndex = array.findIndex((x) => x === element);
-  // findIndex(3 === 3)
+  // findIndex ex: (3 === 3)
+
+  // 3 === 3 true
   if (index === foundIndex) {
     return true;
   }
+
+  // 3 === 4
+  // 3 === 7
+  //...
+  // 3 === "apple"
+  // 3 === "banana"
 
   return false;
   // return element
 }
 
-// console.log(uniques);
+console.log(uniques);
 
 //
 const numbersArray = [
