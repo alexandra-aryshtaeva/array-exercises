@@ -52,7 +52,7 @@ const books = [
 // 1. filter out books that were published before 1960 and belong to the "Fiction" genre
 
 const someBooks = books.filter((book) => {
-  return book.year <= 1960 && book.genre === "Fiction";
+  return book.year < 1960 && book.genre === "Fictio n";
 });
 
 // console.log(someBooks);
@@ -84,6 +84,7 @@ const countries = [
 
 const countriesWithoutP = countries.filter((c) => {
   const includingCOuntry = c.includes("p");
+
   return !includingCOuntry;
 });
 
@@ -96,7 +97,7 @@ const finalCountry = filterCountries("an");
 function filterCountries(letters) {
   return countries.filter((country) => {
     country = country.toLowerCase();
-    return country.includes(letters);
+    return country.includes(letters.toLowerCase());
   });
 }
 
@@ -105,26 +106,14 @@ function filterCountries(letters) {
 // 4. Filter by Index:
 // Write a function that uses the filter method to return an array containing only elements at specified indices.
 
-// const indexList = chooseIndex(0);
+const foundCountries = chooseIndex(0, 2, 5, 8);
 
-// function chooseIndex(number) {
-//   return countries.findIndex((i) => {
-//     return number === i;
-//   });
-// }
-// console.log(indexList);
-
-const findCountry = findCOuntryByIndex(0, 4);
-
-function findCOuntryByIndex(index1, index2) {
-  return countries.filter(() => {
-    return countries.findIndex((i) => {
-      // return i < index1 && i > index2;
-    });
+function chooseIndex(...indices) {
+  return countries.filter((_, index) => {
+    return indices.includes(index);
   });
 }
-
-// console.log(findCountry);
+console.log(foundCountries);
 
 const mixedArray = [
   42,
@@ -148,19 +137,16 @@ const mixedArray = [
 ];
 
 // 5. return truthies
-const truthies = mixedArray.filter((operator) => {
-  return operator;
-});
+const truthies = mixedArray.filter((operator) => operator);
 // console.log(truthies);
 
 // 6. return falsies
-const falsies = mixedArray.filter((operator) => {
-  return !operator;
-});
+const falsies = mixedArray.filter((operator) => !operator);
 // console.log(falsies);
 
 const randomArray = [
   42,
+  "43",
   "hello",
   true,
   null,
@@ -182,13 +168,12 @@ const randomArray = [
 
 // 7. filter positive numbers
 
-const positiveNumbers = filteredNumbes();
+const positiveNumbers = randomArray.filter((op) => {
+  if (typeof Number(op) === "number" && typeof op !== "boolean" && op > 0) {
+    return true;
+  }
 
-function filteredNumbes() {
-  return randomArray.filter((op) => {
-    if (Number(op) > 0) {
-      return true;
-    }
-  });
-}
+  return false;
+});
+
 console.log(positiveNumbers);

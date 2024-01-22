@@ -54,7 +54,6 @@ const wordTest = randomWords.filter(isPalindrome);
 //
 const people = [
   { name: "John", age: 25, city: "New York" },
-
   { name: "Alice", age: 30, city: "San Francisco" },
   { name: "Bob", age: 28, city: "Los Angeles" },
   { name: "Eve", age: 22, city: "Chicago" },

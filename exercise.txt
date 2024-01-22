@@ -24,39 +24,37 @@ Write a function that uses the filter method to return an array of words from an
 o - Filter by Type:
 Write a function that uses the filter method to return an array containing only elements of a specified type (e.g., string, number) from a mixed-type array.
 
-x - Filter Unique Elements:
+o - Filter Unique Elements:
 Write a function that uses the filter method to return an array containing only unique elements from an array (remove duplicates).
 
 o - Filter by Range:
 Write a function that uses the filter method to return an array of numbers within a specified range.
 
 //
-x - Filter Palindromes:
+o -- Filter Palindromes:
 Write a function that uses the filter method to return an array of words from an array of strings, keeping only those that are palindromes.
 
-Filter by Property:
+o - Filter by Property:
 Write a function that uses the filter method to return an array of objects from an array of objects, keeping only those with a specific property value.
 
-Filter by Multiple Conditions:
+//
+o - Filter by Multiple Conditions:
 Write a function that uses the filter method to return an array of elements from an array, satisfying multiple conditions.
 
-Filter by Substring:
+o - Filter by Substring:
 Write a function that uses the filter method to return an array of words from an array of strings, keeping only those that contain a specified substring.
 
-Filter by Index:
+x - Filter by Index:
 Write a function that uses the filter method to return an array containing only elements at specified indices.
 
-Filter Falsy Values:
+0 - Filter Falsy Values:
 Write a function that uses the filter method to remove falsy values (e.g., false, null, 0, "", undefined) from an array.
 
-Filter by Function:
+ Filter by Function:
 Write a function that uses the filter method to return an array of elements that satisfy a custom filtering function.
 
-Filter by Length:
+o - Filter by Length:
 Write a function that uses the filter method to return an array of strings from an array of strings, keeping only those with a length greater than a specified value.
-
-Filter by Object Property:
-Write a function that uses the filter method to return an array of objects from an array of objects, keeping only those with a specific property.
 
 Filter by Date Range:
 Write a function that uses the filter method to return an array of objects with a date property within a specified range.
@@ -64,7 +62,7 @@ Write a function that uses the filter method to return an array of objects with 
 Filter by Array Length:
 Write a function that uses the filter method to return an array of arrays from an array of arrays, keeping only those with a length greater than a specified value.
 
-Feel free to try these exercises to improve your understanding of the filter method in JavaScript!
+
 
 
 

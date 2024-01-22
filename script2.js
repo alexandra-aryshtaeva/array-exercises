@@ -190,8 +190,8 @@ const numbersArray = [
 const result = filterByRange(5, 9);
 
 function filterByRange(start, end) {
-  return numbersArray.filter((e) => {
-    return e <= end && e >= start;
+  return numbersArray.filter((num) => {
+    return num <= end && num >= start;
   });
 }
 //console.log(result);
