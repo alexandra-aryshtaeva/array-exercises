@@ -8,7 +8,7 @@ function sumNumbers(...value) {
     return sum + num;
   }, 0);
 }
-
+// console.log(sumResult);
 // const sumResult = sumNumbers(1, 5, "apple", "0", 6);
 
 // function sumNumbers(...value) {
@@ -53,16 +53,34 @@ function reverseFruit() {
 
 // console.log(finalFruits);
 
-const colors = ["red", "blue", "green", "red", "yellow", "red", "green"];
+const colors = ["red", "blue", "green", "red", "blue", "red", "green"];
 
-function countColors() {
-  let count = 0;
-  for (let i = 0; i <= colors.length - 1; i++) {
-    console.log(i);
-    return (count += count[i]);
-  }
+const numberOfColors = countColors("red");
+
+// function countColors(color) {
+//   let count = 0;
+//   if (color) {
+//     return (count += 1);
+//   } else {
+//     return (count += 0);
+//   }
+// }
+
+function countColors(color) {
+  return colors.reduce((count, item) => {
+    if (color === item) {
+      count += 1;
+    }
+
+    return count;
+
+    // console.log(item);
+    // if (!total[item]) {
+    //   total[item] = 0;
+    // }
+    // total[item]++;
+    // return total;
+  }, 0);
 }
-
-// Example usage:
-
-// console.log(countColors("red")); // Output: 3
+console.log(numberOfColors);
+// console.log(numColors);

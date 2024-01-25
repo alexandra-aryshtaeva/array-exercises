@@ -35,7 +35,7 @@ function filterLength(number) {
   });
 }
 
-console.log(stringLenghth);
+// console.log(stringLenghth);
 
 const newStringArray = [
   "apple",
@@ -157,9 +157,9 @@ const duplicates = [
 
 const uniques = duplicates.filter(filterDuplicates);
 
-function filterDuplicates(element, index, array) {
+function filterDuplicates(element, index) {
   // x is index of copy of array
-  const foundIndex = array.findIndex((x) => x === element);
+  const foundIndex = duplicates.findIndex((x) => x === element);
   // findIndex ex: (3 === 3)
 
   // 3 === 3 true
@@ -173,7 +173,6 @@ function filterDuplicates(element, index, array) {
   // 3 === "apple"
   // 3 === "banana"
 
-  return false;
   // return element
 }
 
